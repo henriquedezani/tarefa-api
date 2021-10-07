@@ -10,6 +10,8 @@ namespace TodoBackEnd.Repositories
 
         public List<Tarefa> Read()
         {
+            tarefas.Add(new Tarefa{Id = "1", Texto = "Estudar para a prova", Finalizada = true});
+            tarefas.Add(new Tarefa{Id = "2", Texto = "Lavar o carro", Finalizada = false});
             return tarefas;
         }
 
